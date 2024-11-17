@@ -21,6 +21,9 @@ class SessionSwitcherMiddleware(MiddlewareMixin):
         username = request.user.username
         user = SessionUser.objects.filter(username=username)
 
+        if not user:
+            return response
+
         switchable_users = SessionUser.objects.all()
         context = {
             "request": request,
