@@ -24,7 +24,7 @@ MIDDLEWARE = [
 ]
 ```
 
-3. Include the polls URLconf in your project urls.py like this
+3. Include the django_session_switchers URLconf in your project urls.py like this
 
 ```
 path("__dss__/", include("django_session_switcher.urls")),

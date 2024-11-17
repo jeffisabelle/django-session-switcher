@@ -10,6 +10,9 @@ packaging = "*"
 wheel = "*"
 
 [dev-packages]
+twine = "*"
+"backports.tarfile" = "*"
+typing_extensions = "*"
 
 [requires]
 python_version = "3.10"
